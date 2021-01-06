@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: white;
+}
+
+.bg-image {
+  /* Set size of image */
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0;
+  /* Background Image */
+  background: url('../img/background.jpg') no-repeat center/cover fixed;
+  /* 
+  background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
+
+  
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+  */
+
+  -webkit-filter: blur(13px);
+  -moz-filter: blur(13px);
+  -o-filter: blur(13px);
+  -ms-filter: blur(13px);
+  filter: blur(13px);
+
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.overlay {
+  width: 1278px;
+  height: 837px;
+  background-color: white;
+  position: absolute;
+  top: 10%;
+  left: 28%;
+  margin-top: -50px; /* this is half the height of your div*/
+  margin-left: -275px; /*this is half of width of your div*/
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid #fd6238;
+}
+/* .form {
+  position: absolute;
+  z-index: 9999;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(13px);
+  filter: blur(0px);
+  width: 100%;
+} */
