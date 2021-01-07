@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -60,7 +61,20 @@ body {
   /* border: 1px solid black; */
   width: 40%;
   padding: 20px;
+  margin-left: 3em;
 }
+
+.guitar-logo {
+  width: 25%;
+}
+
+.heading {
+  font-family: 'Song Myung', serif;
+  text-transform: capitalize;
+  font-size: 36px;
+  margin-top: 20px;
+}
+
 
 .form-image {
   /* temporary */
