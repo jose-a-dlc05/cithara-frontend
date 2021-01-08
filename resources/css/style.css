@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +12,7 @@ body {
   /* so image does not disappear */
   height: 100%;
   background-color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 .bg-image {
@@ -43,13 +46,13 @@ body {
 }
 .overlay {
   width: 75%;
-  height: 837px;
   background-color: white;
   position: absolute;
   top: 10%;
   left: 28%;
-  margin-top: -50px; /* this is half the height of your div*/
-  margin-left: -275px; /* this is half of width of your div  */
+  margin-top: -50px; /* this is half the height of your div */
+  margin-bottom: -50px;
+  margin-left: -15%; /*this is half of width of your div  */
   border-radius: 20px;
   border: 1px solid #fd6238;
 
@@ -71,15 +74,48 @@ body {
 .heading {
   font-family: 'Song Myung', serif;
   text-transform: capitalize;
-  font-size: 36px;
+  font-size: 24px;
   margin-top: 20px;
+  letter-spacing: 3px;
 }
 
+.subheading {
+  font-size: 15px;
+  color: #a9a9a9ab;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+input[type='email'] {
+  margin-bottom: 10px;
+}
+
+input[type='email'],
+input[type='password'] {
+  display: inline-block;
+  width: 90%;
+  padding: 20px;
+  position: relative;
+  background: #e8ebed;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.checkbox {
+  width: 100px;
+  display: inline-block;
+  font-size: 9px;
+  margin-top: 14px;
+  padding: 0;
+}
 
 .form-image {
   /* temporary */
   /* border: 1px solid black; */
   width: 60%;
+  height: auto;
+  max-width: 100%;
   background-image: url('../img/background.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -87,5 +123,3 @@ body {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-
-
