@@ -48,10 +48,10 @@ body {
   width: 75%;
   background-color: white;
   position: absolute;
-  top: 10%;
+  top: 8%;
   left: 28%;
-  margin-top: -50px; /* this is half the height of your div */
-  margin-bottom: -50px;
+  /* margin-top: -0px; */
+  /* margin-bottom: -50px; */
   margin-left: -15%; /*this is half of width of your div  */
   border-radius: 20px;
   border: 1px solid #fd6238;
@@ -108,6 +108,32 @@ input[type='password'] {
   font-size: 9px;
   margin-top: 14px;
   padding: 0;
+}
+
+.forgot-password-link {
+  margin-left: 132px;
+  font-size: 9px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.form-buttons {
+  margin-top: 30px;
+}
+
+.form-buttons a {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 15px;
+  background: gray;
+  margin-right: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .form-image {
