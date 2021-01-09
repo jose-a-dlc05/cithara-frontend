@@ -48,7 +48,7 @@ body {
   width: 75%;
   background-color: white;
   position: absolute;
-  top: 8%;
+  top: 5%;
   left: 28%;
   /* margin-top: -0px; */
   /* margin-bottom: -50px; */
@@ -76,7 +76,7 @@ body {
   text-transform: capitalize;
   font-size: 24px;
   margin-top: 20px;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
 }
 
 .subheading {
@@ -84,6 +84,7 @@ body {
   color: #a9a9a9ab;
   margin-top: 25px;
   margin-bottom: 30px;
+  letter-spacing: 0.5px;
 }
 
 input[type='email'] {
@@ -105,14 +106,14 @@ input[type='password'] {
 .checkbox {
   width: 100px;
   display: inline-block;
-  font-size: 9px;
+  font-size: 10px;
   margin-top: 14px;
   padding: 0;
 }
 
 .forgot-password-link {
-  margin-left: 132px;
-  font-size: 9px;
+  margin-left: 153px;
+  font-size: 10px;
   text-decoration: none;
   color: #000000;
   font-weight: bold;
@@ -122,18 +123,41 @@ input[type='password'] {
   margin-top: 30px;
 }
 
-.form-buttons a {
+.btn {
   display: inline-block;
-  height: 40px;
-  line-height: 40px;
+  height: 38px;
+  line-height: 33px;
   border: none;
   border-radius: 5px;
-  padding: 5px 15px;
-  background: gray;
+  padding: 5px 32px;
   margin-right: 10px;
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.primary-btn {
+  background: #FD6238;
+  color: #FFFFFF;
+}
+
+.secondary-btn {
+  background: #FFFFFF;
+  color: #FD6238;
+  border: 1px solid #FD6238;
+}
+
+.legal-terms {
+  margin: 30px 0;
+  padding: 5px 2px;
+  font-size: 13px;
+  color: #A9A9A9;
+  letter-spacing: 0.5px;
+}
+
+.bold {
+  font-weight: bold;
+  color: #333333;
 }
 
 .form-image {
