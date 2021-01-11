@@ -46,9 +46,10 @@ body {
 }
 .overlay {
   width: 75%;
+  height: 95%;
   background-color: white;
   position: absolute;
-  top: 5%;
+  top: 2.5%;
   left: 28%;
   /* margin-top: -0px; */
   /* margin-bottom: -50px; */
@@ -137,21 +138,21 @@ input[type='password'] {
 }
 
 .primary-btn {
-  background: #FD6238;
-  color: #FFFFFF;
+  background: #fd6238;
+  color: #ffffff;
 }
 
 .secondary-btn {
-  background: #FFFFFF;
-  color: #FD6238;
-  border: 1px solid #FD6238;
+  background: #ffffff;
+  color: #fd6238;
+  border: 1px solid #fd6238;
 }
 
 .legal-terms {
   margin: 30px 0;
   padding: 5px 2px;
   font-size: 13px;
-  color: #A9A9A9;
+  color: #a9a9a9;
   letter-spacing: 0.5px;
 }
 
