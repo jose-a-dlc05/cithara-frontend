@@ -60,7 +60,9 @@ body {
   display: flex;
 }
 
-.form {
+/* Login Form */
+
+.login-form {
   /* temporary */
   /* border: 1px solid black; */
   width: 40%;
@@ -161,7 +163,7 @@ input[type='password'] {
   color: #333333;
 }
 
-.form-image {
+.login-form-image {
   /* temporary */
   /* border: 1px solid black; */
   width: 60%;
@@ -174,3 +176,5 @@ input[type='password'] {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
+
+/* Registration Form */
