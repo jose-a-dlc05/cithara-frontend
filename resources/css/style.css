@@ -93,15 +93,15 @@ body {
 input[type='email'],
 input[type='text'],
 input[type='password'] {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 input[type='email'],
 input[type='password'],
 input[type='text'] {
   display: inline-block;
-  width: 90%;
-  padding: 20px;
+  width: 95%;
+  padding: 15px;
   position: relative;
   background: #e8ebed;
   border: none;
@@ -115,6 +115,14 @@ input[type='text'] {
   font-size: 10px;
   margin-top: 14px;
   padding: 0;
+}
+
+.remember-checkbox {
+  transform: scale(1.5);
+}
+
+.checkbox span {
+  margin-left: 5px;
 }
 
 .forgot-password-link {
@@ -182,7 +190,7 @@ input[type='text'] {
 
 /* Registration Form */
 .left {
-  width: 40%;
+  width: 45%;
   padding: 20px;
   margin-left: 3em;
 }
@@ -190,6 +198,9 @@ input[type='text'] {
 .registration-form--heading {
   margin-top: 25px;
   margin-bottom: 30px;
+  font-size: 14px;
+  color: #a9a9a9;
+  padding: 0 15px 0 0;
 }
 
 .email-checkbox,
@@ -200,16 +211,35 @@ input[type='text'] {
 }
 
 input[type='checkbox'] {
-  transform: scale(1.5);
+  transform: scale(1);
 }
 
 .checkbox-text {
   margin-left: 10px;
-  font-size: 13px;
+  font-size: 11px;
+  color: #a9a9a9;
 }
 
 .ca-btn {
   margin-bottom: 40px;
+}
+
+.reg-username,
+.reg-emailadd,
+.reg-password {
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 90%;
+  padding: 15px;
+  position: relative;
+  background: #e8ebed;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+strong {
+  color: #000000;
 }
 
 .existing-account {
@@ -218,16 +248,22 @@ input[type='checkbox'] {
 
 .login-anchor {
   text-decoration: none;
-  color: #FF6239;
+  color: #ff6239;
 }
 
 .right {
-  width: 60%;
+  width: 55%;
   height: auto;
   max-width: 100%;
-  background: linear-gradient(180deg, rgba(241,221,166,1) 0%, rgba(253,99,57,1) 74%);
+  background: linear-gradient(
+    180deg,
+    rgba(241, 221, 166, 1) 0%,
+    rgba(253, 99, 57, 1) 74%
+  );
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 19px;
 }
 
 .registration-logo {
-  margin-left: 26em;
+  margin-left: 24em;
 }

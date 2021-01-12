@@ -20,6 +20,7 @@
             name="username"
             id="username"
             placeholder="Username"
+            class="reg-username"
             required
           />
           <input
@@ -27,33 +28,39 @@
             name="email"
             id="email"
             placeholder="E-mail Address"
+            class="reg-emailadd"
             required
           />
           <input
             type="password"
             name="password"
-            id="password"
+            id="reg-password"
             placeholder="Password"
+            class="reg-password"
+            autocomplete="on"
             required
           />
           <input
             type="password"
             name="password"
-            id="password"
+            id="password-confirm"
             placeholder="Password"
+            class="reg-password"
+            autocomplete="on"
             required
           />
         </form>
         <label class="email-checkbox">
-          <input type="checkbox" value="remember-me" id="remember_me" />
+          <input type="checkbox" />
           <span class="checkbox-text"
             >Yes, I want to receive email notifications from Cithara</span
           >
         </label>
         <label class="terms-checkbox">
-          <input type="checkbox" value="remember-me" id="remember_me" />
+          <input type="checkbox" />
           <span class="checkbox-text"
-            >I agree to all the Term, Privacy Policy and Fees</span
+            >I agree to all the <strong>Term</strong>,
+            <strong>Privacy Policy</strong> and <strong>Fees</strong></span
           >
         </label>
         <div class="form-buttons">
