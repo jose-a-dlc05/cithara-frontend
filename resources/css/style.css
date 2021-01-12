@@ -90,12 +90,15 @@ body {
   letter-spacing: 0.5px;
 }
 
-input[type='email'] {
-  margin-bottom: 10px;
+input[type='email'],
+input[type='text'],
+input[type='password'] {
+  margin-bottom: 20px;
 }
 
 input[type='email'],
-input[type='password'] {
+input[type='password'],
+input[type='text'] {
   display: inline-block;
   width: 90%;
   padding: 20px;
@@ -178,3 +181,53 @@ input[type='password'] {
 }
 
 /* Registration Form */
+.left {
+  width: 40%;
+  padding: 20px;
+  margin-left: 3em;
+}
+
+.registration-form--heading {
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.email-checkbox,
+.terms-checkbox {
+  display: block;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+input[type='checkbox'] {
+  transform: scale(1.5);
+}
+
+.checkbox-text {
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.ca-btn {
+  margin-bottom: 40px;
+}
+
+.existing-account {
+  font-size: 19px;
+}
+
+.login-anchor {
+  text-decoration: none;
+  color: #FF6239;
+}
+
+.right {
+  width: 60%;
+  height: auto;
+  max-width: 100%;
+  background: linear-gradient(180deg, rgba(241,221,166,1) 0%, rgba(253,99,57,1) 74%);
+}
+
+.registration-logo {
+  margin-left: 26em;
+}

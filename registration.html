@@ -10,7 +10,7 @@
     <div class="bg-image"></div>
     <div class="overlay">
       <div class="registration-form left">
-        <p>
+        <p class="registration-form--heading">
           Fill in the information below to verify your personal account and
           begin setting up your profile
         </p>
@@ -44,11 +44,33 @@
             required
           />
         </form>
+        <label class="email-checkbox">
+          <input type="checkbox" value="remember-me" id="remember_me" />
+          <span class="checkbox-text"
+            >Yes, I want to receive email notifications from Cithara</span
+          >
+        </label>
+        <label class="terms-checkbox">
+          <input type="checkbox" value="remember-me" id="remember_me" />
+          <span class="checkbox-text"
+            >I agree to all the Term, Privacy Policy and Fees</span
+          >
+        </label>
         <div class="form-buttons">
-          <a href="#" class="primary-btn btn">Create Account</a>
+          <a href="#" class="primary-btn btn ca-btn">Create Account</a>
         </div>
+        <p class="existing-account">
+          Already have an account?
+          <a href="index.html" class="login-anchor">Log in</a>
+        </p>
       </div>
-      <div class="registration-gradient right"></div>
+      <div class="registration-gradient right">
+        <img
+          src="resources/img/cithara_logo.png"
+          alt="orange guitar tail with pick behind it"
+          class="guitar-logo registration-logo"
+        />
+      </div>
     </div>
   </body>
 </html>
