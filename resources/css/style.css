@@ -115,6 +115,7 @@ input[type='text'] {
   font-size: 10px;
   margin-top: 14px;
   padding: 0;
+  position: relative;
 }
 
 .remember-checkbox {
@@ -123,6 +124,8 @@ input[type='text'] {
 
 .checkbox span {
   margin-left: 5px;
+  position: absolute;
+  top: 0.5px;
 }
 
 .forgot-password-link {
@@ -131,6 +134,8 @@ input[type='text'] {
   text-decoration: none;
   color: #000000;
   font-weight: bold;
+  position: relative;
+  top: -3px;
 }
 
 .form-buttons {
@@ -143,7 +148,7 @@ input[type='text'] {
   line-height: 33px;
   border: none;
   border-radius: 5px;
-  padding: 5px 32px;
+  padding: 3px 32px;
   margin-right: 10px;
   font-size: 14px;
   text-decoration: none;
@@ -172,6 +177,10 @@ input[type='text'] {
 .bold {
   font-weight: bold;
   color: #333333;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .login-form-image {
@@ -208,6 +217,7 @@ input[type='text'] {
   display: block;
   margin-top: 10px;
   margin-left: 5px;
+  position: relative;
 }
 
 input[type='checkbox'] {
@@ -218,6 +228,8 @@ input[type='checkbox'] {
   margin-left: 10px;
   font-size: 11px;
   color: #a9a9a9;
+  position: absolute;
+  top: 3px;
 }
 
 .ca-btn {
