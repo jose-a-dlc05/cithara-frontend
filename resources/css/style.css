@@ -15,31 +15,24 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.bg-image {
+.bg-login {
   /* Set size of image */
   min-height: 100%;
   min-width: 100%;
   margin: 0;
   /* Background Image */
-  background: url('../img/background.jpg') no-repeat center/cover fixed;
-  /* 
-  background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;
-
-  
-    background-image: url('../img/background.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    
-  */
-
-  -webkit-filter: blur(13px);
-  -moz-filter: blur(13px);
-  -o-filter: blur(13px);
-  -ms-filter: blur(13px);
-  filter: blur(13px);
-
+  background: linear-gradient(180deg, rgba(240,156,27,1) 0%, rgba(244,142,172,1) 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.bg-registration {
+  /* Set size of image */
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0;
+  /* Background Image */
+  background: linear-gradient(180deg, rgba(240,156,27,1) 0%, rgba(96,161,187,1) 100%);
   position: absolute;
   left: 0;
   top: 0;
@@ -55,7 +48,7 @@ body {
   /* margin-bottom: -50px; */
   margin-left: -15%; /*this is half of width of your div  */
   border-radius: 20px;
-  border: 1px solid #fd6238;
+  border: 1px solid #FD734D;
 
   display: flex;
 }
@@ -156,14 +149,14 @@ input[type='text'] {
 }
 
 .primary-btn {
-  background: #fd6238;
+  background: #FD734D;
   color: #ffffff;
 }
 
 .secondary-btn {
   background: #ffffff;
-  color: #fd6238;
-  border: 1px solid #fd6238;
+  color: #FD734D;
+  border: 1px solid #FD734D;
 }
 
 .legal-terms {
@@ -189,7 +182,7 @@ input[type='text'] {
   width: 60%;
   height: auto;
   max-width: 100%;
-  background-image: url('../img/background.jpg');
+  background-image: url('../img/sax_player.png') ;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -260,20 +253,21 @@ strong {
 
 .login-anchor {
   text-decoration: none;
-  color: #ff6239;
+  color: #60A1BB;
 }
 
 .right {
+ /* temporary */
+  /* border: 1px solid black; */
   width: 55%;
   height: auto;
   max-width: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(241, 221, 166, 1) 0%,
-    rgba(253, 99, 57, 1) 74%
-  );
+  background-image: url('../img/guitar_player.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border-top-right-radius: 20px;
-  border-bottom-right-radius: 19px;
+  border-bottom-right-radius: 20px;
 }
 
 .registration-logo {
