@@ -21,7 +21,11 @@ body {
   min-width: 100%;
   margin: 0;
   /* Background Image */
-  background: linear-gradient(180deg, rgba(240,156,27,1) 0%, rgba(244,142,172,1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(240, 156, 27, 1) 0%,
+    rgba(244, 142, 172, 1) 100%
+  );
   position: absolute;
   left: 0;
   top: 0;
@@ -32,7 +36,11 @@ body {
   min-width: 100%;
   margin: 0;
   /* Background Image */
-  background: linear-gradient(180deg, rgba(240,156,27,1) 0%, rgba(96,161,187,1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(240, 156, 27, 1) 0%,
+    rgba(96, 161, 187, 1) 100%
+  );
   position: absolute;
   left: 0;
   top: 0;
@@ -43,7 +51,11 @@ body {
   min-width: 100%;
   margin: 0;
   /* Background Image */
-  background: linear-gradient(180deg, rgba(96,161,187,1) 0%, rgba(244,142,172,1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(96, 161, 187, 1) 0%,
+    rgba(244, 142, 172, 1) 100%
+  );
   position: absolute;
   left: 0;
   top: 0;
@@ -59,7 +71,7 @@ body {
   /* margin-bottom: -50px; */
   margin-left: -15%; /*this is half of width of your div  */
   border-radius: 20px;
-  border: 1px solid #FD734D;
+  border: 1px solid #fd734d;
 
   display: flex;
 }
@@ -160,14 +172,14 @@ input[type='text'] {
 }
 
 .primary-btn {
-  background: #FD734D;
+  background: #fd734d;
   color: #ffffff;
 }
 
 .secondary-btn {
   background: #ffffff;
-  color: #FD734D;
-  border: 1px solid #FD734D;
+  color: #fd734d;
+  border: 1px solid #fd734d;
 }
 
 .legal-terms {
@@ -193,7 +205,7 @@ input[type='text'] {
   width: 60%;
   height: auto;
   max-width: 100%;
-  background-image: url('../img/trumpet_player.webp') ;
+  background-image: url('../img/trumpet_player.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -207,7 +219,7 @@ input[type='text'] {
   width: 60%;
   height: auto;
   max-width: 100%;
-  background-image: url('../img/sax_player.png') ;
+  background-image: url('../img/sax_player.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -278,11 +290,11 @@ strong {
 
 .login-anchor {
   text-decoration: none;
-  color: #60A1BB;
+  color: #60a1bb;
 }
 
 .right {
- /* temporary */
+  /* temporary */
   /* border: 1px solid black; */
   width: 55%;
   height: auto;
@@ -301,7 +313,7 @@ strong {
 
 /* Forgot Password Form */
 .heading-forgot {
-  font-size: 28px;
+  font-size: 25px;
   margin-top: 30px;
 }
 
@@ -317,11 +329,11 @@ strong {
 
 .center {
   position: relative;
-  left: 10em;
+  left: 116px;
 }
 
 .forgot-login {
   position: relative;
-  top: 5em;
-  left: 6.5em;
+  top: 50px;
+  left: 80px;
 }
