@@ -60,6 +60,24 @@ body {
   left: 0;
   top: 0;
 }
+
+.bg-home {
+  /* Set size of image */
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0;
+  /* Background Image */
+  background: rgb(244, 142, 172);
+  background: linear-gradient(
+    180deg,
+    rgba(244, 142, 172, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .overlay {
   width: 75%;
   height: 95%;
@@ -336,4 +354,9 @@ strong {
   position: relative;
   top: 50px;
   left: 80px;
+}
+
+.container {
+  width: 90%;
+  border: 1px solid black;
 }
