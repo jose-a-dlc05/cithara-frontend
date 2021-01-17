@@ -37,6 +37,17 @@ body {
   left: 0;
   top: 0;
 }
+.bg-forgot-password {
+  /* Set size of image */
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0;
+  /* Background Image */
+  background: linear-gradient(180deg, rgba(96,161,187,1) 0%, rgba(244,142,172,1) 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 .overlay {
   width: 75%;
   height: 95%;
@@ -176,6 +187,20 @@ input[type='text'] {
   text-decoration: none;
 }
 
+.forgot-form-image {
+  /* temporary */
+  /* border: 1px solid black; */
+  width: 60%;
+  height: auto;
+  max-width: 100%;
+  background-image: url('../img/trumpet_player.webp') ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
 .login-form-image {
   /* temporary */
   /* border: 1px solid black; */
@@ -272,4 +297,31 @@ strong {
 
 .registration-logo {
   margin-left: 24em;
+}
+
+/* Forgot Password Form */
+.heading-forgot {
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+.subheading-forgot {
+  text-align: center;
+  color: #333333;
+  padding: 17px;
+}
+
+.email-forgot {
+  margin-top: 30px;
+}
+
+.center {
+  position: relative;
+  left: 10em;
+}
+
+.forgot-login {
+  position: relative;
+  top: 5em;
+  left: 6.5em;
 }
