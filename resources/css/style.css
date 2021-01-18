@@ -357,6 +357,8 @@ strong {
 }
 
 .container {
-  width: 90%;
+  width: 1092px; /*  80%  */
+  margin: 0 auto;
   border: 1px solid black;
+  height: 100%;
 }
