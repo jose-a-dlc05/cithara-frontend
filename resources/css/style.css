@@ -13,6 +13,7 @@ body {
   height: 100%;
   background-color: white;
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
 
 .bg-login {
@@ -105,7 +106,7 @@ body {
 }
 
 .guitar-logo {
-  width: 25%;
+  width: 93.266px;
 }
 
 .heading {
@@ -356,9 +357,38 @@ strong {
   left: 80px;
 }
 
+/* home page */
 .container {
-  width: 1092px; /*  80%  */
+  width: 1229px; /*  90%  */
   margin: 0 auto;
   border: 1px solid black;
   height: 100%;
 }
+
+.home-header {
+  margin: 0 30px;
+  margin-top: 10px;
+  display: flex;
+}
+
+.nav-items {
+  display: flex;
+  position: relative;
+  top: 34px;
+  left: 450px;
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 68px;
+  color: #333333;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
