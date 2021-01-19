@@ -361,7 +361,7 @@ strong {
 .container {
   width: 1229px; /*  90%  */
   margin: 0 auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   height: 100%;
 }
 
@@ -375,12 +375,12 @@ strong {
   display: flex;
   position: relative;
   top: 34px;
-  left: 450px;
+  left: 484px;
   list-style: none;
 }
 
 .nav-item {
-  margin-left: 68px;
+  margin-left: 55px;
   color: #333333;
 }
 
@@ -390,5 +390,42 @@ strong {
   font-size: 18px;
   font-weight: bold;
 }
+
+.hero {
+  display: flex;
+  margin: 0 auto;
+}
+
+
+.full-band-image {
+  width: 498px;
+  border-radius: 22px;
+}
+
+.hero-left {
+  margin: 0 auto;
+  position: relative;
+  top: 149px;
+  left: -3px;
+  transform: rotate(-15deg);
+}
+
+.hero-right {
+  width: 490px;
+  margin: 0 auto;
+  position: relative;
+  top: 84px;
+  right: 15px;
+}
+
+.hero-right--header {
+  font-size: 42px;
+}
+
+.hero-right--description,
+.hero-right--btn {
+  margin-top: 87px;
+}
+
 
 
