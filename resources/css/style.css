@@ -191,14 +191,15 @@ input[type='text'] {
 }
 
 .primary-btn {
-  background: #fd734d;
+  background: #F66038;
   color: #ffffff;
+  border: 1px solid #F66038;
 }
 
 .secondary-btn {
   background: #ffffff;
-  color: #fd734d;
-  border: 1px solid #fd734d;
+  color: #F66038;
+  border: 1px solid #F66038;
 }
 
 .legal-terms {
@@ -428,6 +429,17 @@ nav {
 .hero-right--description,
 .hero-right--btn {
   margin-top: 87px;
+}
+
+.icons {
+  position: relative;
+  top: 11em;
+  left: 66.5em;
+}
+
+.icons .fab {
+  display: inline-block;
+  margin-left: 5px;
 }
 
 
