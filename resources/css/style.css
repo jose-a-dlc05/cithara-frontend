@@ -371,11 +371,14 @@ strong {
   display: flex;
 }
 
-.nav-items {
-  display: flex;
+nav {
   position: relative;
   top: 34px;
-  left: 484px;
+  left: 50%;
+}
+
+.nav-items {
+  display: flex;
   list-style: none;
 }
 
