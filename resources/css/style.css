@@ -108,9 +108,9 @@ nav {
 .hero__left {
   margin: 0 auto;
   position: relative;
-  top: 149px;
+  top: 160px;
   left: -3px;
-  transform: rotate(-15deg);
+  transform: rotate(-20deg);
 }
 
 .full-band-image {
@@ -131,8 +131,12 @@ nav {
 }
 
 .hero__right--description,
-.hero__right--btn {
-  margin-top: 87px;
+#hero__right--btn {
+  margin-top: 50px;
+}
+
+.hero__right--description {
+  line-height: 30px;
 }
 
 .icons {
@@ -144,6 +148,11 @@ nav {
 .icons .fab {
   display: inline-block;
   margin-left: 5px;
+}
+
+/* For Interactivity */
+#more {
+  display: none;
 }
 
 /* ----- */
