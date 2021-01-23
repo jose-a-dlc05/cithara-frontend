@@ -111,6 +111,7 @@ nav {
   top: 160px;
   left: -3px;
   transform: rotate(-20deg);
+  height: 0;
 }
 
 .full-band-image {
@@ -139,10 +140,15 @@ nav {
   line-height: 30px;
 }
 
+footer {
+  position: fixed;
+  top: 40em;
+}
+
 .icons {
   position: relative;
-  top: 11em;
   left: 66.5em;
+  width: 93px;
 }
 
 .icons .fab {
