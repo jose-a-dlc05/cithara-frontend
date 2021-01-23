@@ -265,7 +265,7 @@ input[type='text'] {
 }
 
 .forgot-password-link {
-  margin-left: 153px;
+  margin-left: 171px;
   font-size: 10px;
   text-decoration: none;
   color: #000000;
@@ -436,6 +436,23 @@ strong {
 .heading-forgot {
   font-size: 25px;
   margin-top: 30px;
+}
+
+.heading {
+  font-family: 'Song Myung', serif;
+  text-transform: capitalize;
+  font-size: 24px;
+  margin-top: 20px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.subheading {
+  font-size: 15px;
+  color: #a9a9a9ab;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
 }
 
 .subheading-forgot {
