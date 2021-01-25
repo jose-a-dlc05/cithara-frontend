@@ -197,7 +197,6 @@ footer {
   letter-spacing: 0.5px;
 }
 
-
 /* ------------ */
 /* REGISTRATION */
 /* ------------ */
@@ -210,6 +209,18 @@ footer {
   );
 }
 
+button {
+  cursor: pointer;
+  background-color: #f66038;
+  border: 2px solid #f66038;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 /* --------------- */
 /* FORGOT PASSWORD */
@@ -222,8 +233,6 @@ footer {
     rgba(244, 142, 172, 1) 100%
   );
 }
-
-
 
 /* Login Form */
 input[type='email'],
@@ -292,15 +301,15 @@ input[type='text'] {
 }
 
 .primary-btn {
-  background: #F66038;
+  background: #f66038;
   color: #ffffff;
-  border: 1px solid #F66038;
+  border: 1px solid #f66038;
 }
 
 .secondary-btn {
   background: #ffffff;
-  color: #F66038;
-  border: 1px solid #F66038;
+  color: #f66038;
+  border: 1px solid #f66038;
 }
 
 .legal-terms {
@@ -475,9 +484,3 @@ strong {
   top: 50px;
   left: 80px;
 }
-
-
-
-
-
-
