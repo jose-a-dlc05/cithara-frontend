@@ -46,6 +46,8 @@ body {
   display: flex;
 }
 
+
+
 .guitar-logo {
   width: 93.266px;
 }
@@ -523,4 +525,28 @@ strong {
   position: relative;
   top: 50px;
   left: 80px;
+}
+
+/* Email Verification */
+.background__verificationEmail {
+  /* Background Image */
+  background: linear-gradient(
+    180deg,
+    rgba(244, 142, 172, 1) 0%,
+    rgba(96, 161, 187, 1) 100%
+  );
+}
+
+.overlay-verification {
+  width: 35%;
+  height: 80%;
+  background-color: white;
+  position: relative;
+  top: 10.5%;
+  left: 46%;
+  /* margin-top: -0px; */
+  /* margin-bottom: -50px; */
+  margin-left: -15%; /*this is half of width of your div  */
+  border-radius: 20px;
+  border: 1px solid #fd734d;
 }

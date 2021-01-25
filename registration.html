@@ -14,7 +14,7 @@
           Fill in the information below to verify your personal account and
           begin setting up your profile
         </p>
-        <form id="form" class="form">
+        <form id="form" class="form" method="post" action="index.php">
           <div class="form-control">
             <input
               type="text"
@@ -39,7 +39,7 @@
             <input
               type="password"
               name="password"
-              id="reg-password"
+              id="password"
               placeholder="Password"
               class="reg-password"
               autocomplete="on"
@@ -50,14 +50,16 @@
             <input
               type="password"
               name="password"
-              id="password-confirm"
+              id="password2"
               placeholder="Password"
               class="reg-password"
               autocomplete="on"
             />
             <small></small>
           </div>
-          <button type="submit">Create Account</button>
+          <button onclick="window.location.href='index.html'" type="submit">
+            Create Account
+          </button>
         </form>
         <label class="email-checkbox">
           <input type="checkbox" />
