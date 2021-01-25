@@ -214,12 +214,21 @@ footer {
   position: relative;
 }
 
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
 .form-control.success input {
   border-color: #2ecc71;
+  border-width: 2px;
+  border-style: solid;
 }
 
 .form-control.error input {
   border-color: #e74c3c;
+  border-width: 2px;
+  border-style: solid;
 }
 
 .form-control small {
@@ -427,7 +436,7 @@ input[type='checkbox'] {
   margin-bottom: 40px;
 }
 
-.reg-username,
+/* .reg-username,
 .reg-emailadd,
 .reg-password {
   margin-bottom: 20px;
@@ -436,10 +445,10 @@ input[type='checkbox'] {
   padding: 15px;
   position: relative;
   background: #e8ebed;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-}
+  /* border: none;
+  outline: none; */
+/* border-radius: 5px;
+ } */
 
 strong {
   color: #000000;
