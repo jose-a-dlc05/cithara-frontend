@@ -70,6 +70,16 @@ function getFieldName(input) {
   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 }
 
+// Checks if all inputs successful
+function addStorageItems(inputArray) {
+  inputArray.forEach(function(input){
+    if(input.parentElement.className === 'form-control success'){
+      sessionStorage.setItem(input.id,input.value);
+    }
+  });
+ }
+
+
 // Event Listeners
 
 form.addEventListener('submit', function (e) {
@@ -80,4 +90,6 @@ form.addEventListener('submit', function (e) {
   checkLength(password,6,25);
   checkEmail(email);
   checkPasswordsMatch(password,password2);
+  addStorageItems([username, email, password, password2]);
+
 });

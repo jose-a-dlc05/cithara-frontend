@@ -484,7 +484,7 @@ strong {
 }
 
 /* Forgot Password Form */
-.heading-forgot {
+.heading-forgot{
   font-size: 25px;
   margin-top: 30px;
 }
@@ -539,14 +539,48 @@ strong {
 
 .overlay-verification {
   width: 35%;
-  height: 80%;
+  height: 60%;
   background-color: white;
   position: relative;
-  top: 10.5%;
+  top: 19.5%;
   left: 46%;
   /* margin-top: -0px; */
   /* margin-bottom: -50px; */
   margin-left: -15%; /*this is half of width of your div  */
   border-radius: 20px;
   border: 1px solid #fd734d;
+}
+
+.verification_page {
+  /* temporary */
+  /* border: 1px solid black; */
+  width: 100%;
+  padding: 30px;
+  position: relative;
+}
+
+.heading-verification{
+  text-align: left;
+  font-size: 30px;
+  margin-top: 1em;
+}
+
+.subheading-verification{
+  color: #333333;
+}
+
+.verification-btn {
+  margin-top:1.5em;
+  margin-left: 1em;
+}
+
+.feedback {
+  font-size: 10px;
+  position: relative;
+  top: 20px;
+  left: 93px;
+}
+
+.feedback a {
+  text-decoration: none;
 }
