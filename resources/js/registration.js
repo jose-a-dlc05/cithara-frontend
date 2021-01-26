@@ -91,6 +91,7 @@ function addStorageItems(inputArray) {
   inputArray.forEach(function(input){
     if(input.parentElement.className === 'form-control success' && toggled.checked){
       sessionStorage.setItem(input.id,input.value);
+      redirectVerification();
     }
   });
  }
@@ -113,5 +114,4 @@ form.addEventListener('submit', function (e) {
   checkPasswordsMatch(password,password2);
   checkRequiredCheckbox(toggled);
   addStorageItems([username, email, password, password2]);
-  redirectVerification();
 });
