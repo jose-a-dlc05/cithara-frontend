@@ -241,6 +241,18 @@ footer {
   visibility: hidden;
 }
 
+
+#terms-error {
+  color: #e74c3c;
+  font-size: 10px;
+  position: relative;
+  bottom: 25px;
+  visibility: hidden;
+}
+#terms-error.required {
+  visibility: visible;
+}
+
 .form-control.error small {
   visibility: visible;
 }

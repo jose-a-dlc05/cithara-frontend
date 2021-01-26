@@ -4,6 +4,8 @@ const username = document.getElementById('username');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
+const toggled = document.getElementById('toggled');
+const terms = document.getElementById('terms-error');
 
 // Function
 // Show error outline
@@ -13,6 +15,10 @@ function showError(input, message) {
   const small = formControl.querySelector('small');
   small.innerText = message;
 }
+
+// function showRequired(input, message) {
+//   const 
+// }
 
 // Show Success Outline
 function showSuccess(input) {
@@ -40,6 +46,16 @@ function checkRequired(inputArray) {
     }
   });
 }
+
+// Check Required Checkbox
+function checkRequiredCheckbox(input) {
+  if(!input.checked) {
+    const terms = document.getElementById('terms-error');
+    terms.className = 'required';
+    terms.innerText = 'Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy';
+  }
+}
+
 
 // Check if passwords match
 function checkPasswordsMatch(input1, input2) {
@@ -73,7 +89,7 @@ function getFieldName(input) {
 // Checks if all inputs successful
 function addStorageItems(inputArray) {
   inputArray.forEach(function(input){
-    if(input.parentElement.className === 'form-control success'){
+    if(input.parentElement.className === 'form-control success' && toggled.checked){
       sessionStorage.setItem(input.id,input.value);
     }
   });
@@ -90,6 +106,8 @@ form.addEventListener('submit', function (e) {
   checkLength(password,6,25);
   checkEmail(email);
   checkPasswordsMatch(password,password2);
-  addStorageItems([username, email, password, password2]);
+  checkRequiredCheckbox(toggled);
+  // addStorageItems([username, email, password, password2]);
+
 
 });

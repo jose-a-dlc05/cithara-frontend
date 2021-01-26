@@ -57,42 +57,43 @@
             />
             <small></small>
           </div>
-          <button type="submit">Create Account</button>
-        </form>
-        <label class="email-checkbox">
-          <input type="checkbox" />
-          <span class="checkbox-text"
-            >Yes, I want to receive email notifications from Cithara</span
-          >
-        </label>
-        <label class="terms-checkbox">
-          <input type="checkbox" />
-          <span class="checkbox-text"
-            >I agree to all the
-            <span
-              ><a
-                href="https://policies.google.com/terms?hl=en-US"
-                class="bold link"
-                >Term</a
-              > </span
-            >,
-            <span
-              ><a
-                href="https://policies.google.com/privacy?hl=en-US"
-                class="bold link"
-                >Privacy Policy</a
+          <label class="email-checkbox">
+            <input type="checkbox" />
+            <span class="checkbox-text"
+              >Yes, I want to receive email notifications from Cithara</span
+            >
+          </label>
+          <label class="terms-checkbox">
+            <input type="checkbox" id="toggled" />
+            <span class="checkbox-text"
+              >I agree to all the
+              <span
+                ><a
+                  href="https://policies.google.com/terms?hl=en-US"
+                  class="bold link"
+                  >Terms</a
+                > </span
+              >,
+              <span
+                ><a
+                  href="https://policies.google.com/privacy?hl=en-US"
+                  class="bold link"
+                  >Privacy Policy</a
+                ></span
+              >
+              and
+              <span
+                ><a
+                  href="https://support.google.com/googleplay/answer/6224192?hl=en"
+                  class="bold link"
+                  >Fees</a
+                ></span
               ></span
             >
-            and
-            <span
-              ><a
-                href="https://support.google.com/googleplay/answer/6224192?hl=en"
-                class="bold link"
-                >Fees</a
-              ></span
-            ></span
-          >
-        </label>
+          </label>
+          <small id="terms-error"></small>
+          <button type="submit">Create Account</button>
+        </form>
         <p class="existing-account">
           Already have an account?
           <a href="login.html" class="login-anchor">Log in</a>
