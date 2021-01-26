@@ -18,11 +18,14 @@
 
         <h1 class="heading heading-verification">Verify your Email</h1>
         <h3 class="subheading subheading-verification">
-          Hi username! Use the link below to verify your email and start
-          enjoying Cithara.
+          Hi <span id="userId"></span>! Use the link below to verify your email
+          and start enjoying Cithara.
         </h3>
         <div class="form-buttons">
-          <a href="#" class="primary-btn btn center verification-btn"
+          <a
+            href="#"
+            class="primary-btn btn center verification-btn"
+            id="email-btn"
             >Verify Email</a
           >
         </div>
@@ -31,5 +34,6 @@
         </p>
       </div>
     </div>
+    <script src="/resources/js/emailverification.js"></script>
   </body>
 </html>

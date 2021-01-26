@@ -95,6 +95,11 @@ function addStorageItems(inputArray) {
   });
  }
 
+ // Redirect to Verification Page
+ function redirectVerification() {
+   window.location.assign("email-verification.html");
+ }
+
 
 // Event Listeners
 
@@ -107,7 +112,6 @@ form.addEventListener('submit', function (e) {
   checkEmail(email);
   checkPasswordsMatch(password,password2);
   checkRequiredCheckbox(toggled);
-  // addStorageItems([username, email, password, password2]);
-
-
+  addStorageItems([username, email, password, password2]);
+  redirectVerification();
 });
