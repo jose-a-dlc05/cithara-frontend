@@ -10,21 +10,19 @@ function showErrorLogin(input, message) {
   small.innerText = message;
 }
 
-function showNoError(inputArray) {
-  inputArray.forEach(function(input) {
+function showNoError(input) {
     const formControl = input.parentElement;
     formControl.className = 'login-form-control success';
-  })
 }
 
 
 function checkCredentialsMatch(inputArray){
   // let response;
     inputArray.forEach(function(input) {
-      if(loginPass.value !== sessionStorage.getItem('password')|| loginEmail.value !== sessionStorage.getItem('email')) {
+      if(input.value !== sessionStorage.getItem('password') || input.value !== sessionStorage.getItem('email')) {
       showErrorLogin(input, `${getFieldName(input)} does not match`);
     } else {
-      showNoError(inputArray);
+      showNoError(input);
       // response = true;
     }
   }); 
@@ -37,7 +35,7 @@ function checkCredentialsRequired(inputArray) {
     if(input.value.trim() === '') {
       showErrorLogin(input, `${getFieldName(input)} is required`);
     } else {
-      showNoError(inputArray);
+      showNoError(input);
       // response = true;
     }
   });
@@ -62,7 +60,9 @@ loginBtn.addEventListener('click', (e)=> {
 
   const inputArray = [loginEmail, loginPass];
   checkCredentialsMatch(inputArray);
-  checkCredentialsRequired(inputArray); 
+  checkCredentialsRequired(inputArray);
+  
+  
 
   // if(checkCredentialsMatch(inputArray) &&
   //   checkCredentialsRequired(inputArray)) {
