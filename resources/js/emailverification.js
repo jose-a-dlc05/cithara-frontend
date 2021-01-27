@@ -7,7 +7,7 @@ function greetUser(username) {
 }
 
 function redirectLogIn(){
-  window.location.assign("login.html");
+  window.location.assign("index.html");
 }
 
 greetUser(verifiedUser);

@@ -211,7 +211,8 @@ footer {
   );
 }
 
-.form-control {
+.form-control,
+.login-form-control {
   padding-bottom: 15px;
   position: relative;
 }
@@ -227,13 +228,19 @@ footer {
   border-style: solid;
 }
 
-.form-control.error input {
+.login-form-control.success input {
+  border: none;
+}
+
+.form-control.error input,
+.login-form-control.error input {
   border-color: #e74c3c;
   border-width: 2px;
   border-style: solid;
 }
 
-.form-control small {
+.form-control small,
+.login-form-control small {
   color: #e74c3c;
   position: absolute;
   bottom: 7px;
@@ -253,7 +260,8 @@ footer {
   visibility: visible;
 }
 
-.form-control.error small {
+.form-control.error small,
+.login-form-control.error small {
   visibility: visible;
 }
 
@@ -330,6 +338,7 @@ input[type='text'] {
   font-weight: bold;
   position: relative;
   top: -3px;
+  left: 23px;
 }
 
 .form-buttons {

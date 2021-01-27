@@ -24,20 +24,24 @@
           Welcome back! Please login to your account to continue
         </h3>
         <form>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="E-mail Address"
-            required
-          />
-          <input
-            type="password"
-            name="password"
-            id="password"
-            placeholder="Password"
-            required
-          />
+          <div class="login-form-control">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail Address"
+            />
+            <small></small>
+          </div>
+          <div class="login-form-control">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Password"
+            />
+            <small></small>
+          </div>
         </form>
         <label class="checkbox">
           <input
@@ -51,7 +55,7 @@
           >Forgot Password</a
         >
         <div class="form-buttons">
-          <a href="#" class="primary-btn btn">Log In</a>
+          <a href="#" class="primary-btn btn" id="login-btn">Log In</a>
           <a href="registration.html" class="secondary-btn btn">Sign Up</a>
         </div>
         <p class="legal-terms">
@@ -75,5 +79,6 @@
       </div>
       <div class="login-form-image"></div>
     </div>
+    <script src="/resources/js/login.js"></script>
   </body>
 </html>
