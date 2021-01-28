@@ -109,6 +109,7 @@ function addStorageItems(inputArray) {
   ) {
     inputArray.forEach(function (input) {
       sessionStorage.setItem(input.id, input.value);
+      sessionStorage.setItem('loginstatus', 'yes');
     });
     redirectVerification();
   }

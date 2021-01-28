@@ -3,12 +3,10 @@ let btn = document.getElementById('hero__right--btn');
 let dots = document.getElementById('dots');
 let moreText = document.getElementById('more');
 let btnText = document.getElementById('hero__right--btn').textContent;
-
-// Event Listeners
-btn.addEventListener('click', learnMoreBtnClick);
+let loginStatus = document.getElementById('login-status');
+console.log(loginStatus.innerHTML);
 
 // Functions
-
 // Learn More Button - Home Page
 function learnMoreBtnClick(e) {
   e.preventDefault();
@@ -25,3 +23,8 @@ function learnMoreBtnClick(e) {
     btnText = 'Learn More';
   }
 }
+
+function loginStatusChange() {}
+
+// Event Listeners
+btn.addEventListener('click', learnMoreBtnClick);
