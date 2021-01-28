@@ -46,8 +46,6 @@ body {
   display: flex;
 }
 
-
-
 .guitar-logo {
   width: 93.266px;
 }
@@ -213,7 +211,7 @@ footer {
 
 .form-control,
 .login-form-control,
-.email-forgot {
+.email-form {
   padding-bottom: 15px;
   position: relative;
 }
@@ -230,13 +228,13 @@ footer {
 }
 
 .login-form-control.success input,
-.email-forgot.success input {
+.email-form.success input {
   border: none;
 }
 
 .form-control.error input,
 .login-form-control.error input,
-.email-forgot.error input {
+.email-form.error input {
   border-color: #e74c3c;
   border-width: 2px;
   border-style: solid;
@@ -244,14 +242,13 @@ footer {
 
 .form-control small,
 .login-form-control small,
-.email-forgot small {
+.email-form small {
   color: #e74c3c;
   position: absolute;
   bottom: 7px;
   left: 0;
   visibility: hidden;
 }
-
 
 #terms-error {
   color: #e74c3c;
@@ -266,7 +263,7 @@ footer {
 
 .form-control.error small,
 .login-form-control.error small,
-.email-forgot.error small {
+.email-form.error small {
   visibility: visible;
 }
 
@@ -510,7 +507,7 @@ strong {
 }
 
 /* Forgot Password Form */
-.heading-forgot{
+.heading-forgot {
   font-size: 25px;
   margin-top: 30px;
 }
@@ -550,7 +547,7 @@ strong {
 .forgot-login {
   position: relative;
   top: 50px;
-  left: 80px;
+  left: 47px;
 }
 
 /* Email Verification */
@@ -585,18 +582,18 @@ strong {
   position: relative;
 }
 
-.heading-verification{
+.heading-verification {
   text-align: left;
   font-size: 30px;
   margin-top: 1em;
 }
 
-.subheading-verification{
+.subheading-verification {
   color: #333333;
 }
 
 .verification-btn {
-  margin-top:1.5em;
+  margin-top: 1.5em;
   margin-left: 1em;
 }
 
