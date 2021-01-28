@@ -35,7 +35,7 @@ function checkPasswordsMatch(input) {
   if (input.value.trim() === '') {
     showErrorLogin(input, `${getFieldName(input)} is required`);
   } else if (input.value !== sessionStorage.getItem('password')) {
-    showErrorLogin(input, 'please enter correct password');
+    showErrorLogin(input, 'Please enter correct password');
   } else {
     showNoError(input);
     response = true;

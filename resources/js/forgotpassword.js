@@ -23,18 +23,21 @@ function checkEmail(input) {
     showSuccess(input);
     response = true;
   } else {
-    showError(input, 'Email is not valid');
+    showError(input, 'Email entry is not valid');
   }
   return response;
 }
 
 // Check required field
 function checkRequired(input) {
+  let response = false;
   if (input.value.trim() === '') {
     showError(input, `${getFieldName(input)} is required`);
   } else {
     showSuccess(input);
+    response = true;
   }
+  return response;
 }
 
 // Returns capitalized input id name
@@ -44,16 +47,13 @@ function getFieldName(input) {
 
 // Redirect to Verification Page
 function redirectLogin() {
-  window.location.assign('login.html');
+  if (checkRequired(email) && checkEmail(email)) {
+    window.location.assign('login.html');
+  }
 }
 
 sendForgottenEmail.addEventListener('click', (e) => {
   e.preventDefault();
 
-  checkRequired(email);
-  checkEmail(email);
-
-  if (checkEmail(email)) {
-    window.location.assign('login.html');
-  }
+  redirectLogin();
 });
