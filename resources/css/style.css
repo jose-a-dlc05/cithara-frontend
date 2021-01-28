@@ -212,7 +212,8 @@ footer {
 }
 
 .form-control,
-.login-form-control {
+.login-form-control,
+.email-forgot {
   padding-bottom: 15px;
   position: relative;
 }
@@ -228,19 +229,22 @@ footer {
   border-style: solid;
 }
 
-.login-form-control.success input {
+.login-form-control.success input,
+.email-forgot.success input {
   border: none;
 }
 
 .form-control.error input,
-.login-form-control.error input {
+.login-form-control.error input,
+.email-forgot.error input {
   border-color: #e74c3c;
   border-width: 2px;
   border-style: solid;
 }
 
 .form-control small,
-.login-form-control small {
+.login-form-control small,
+.email-forgot small {
   color: #e74c3c;
   position: absolute;
   bottom: 7px;
@@ -261,7 +265,8 @@ footer {
 }
 
 .form-control.error small,
-.login-form-control.error small {
+.login-form-control.error small,
+.email-forgot.error small {
   visibility: visible;
 }
 

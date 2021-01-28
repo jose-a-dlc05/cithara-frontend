@@ -11,31 +11,14 @@ function showErrorLogin(input, message) {
 }
 
 function showNoError(input) {
-    const formControl = input.parentElement;
-    formControl.className = 'login-form-control success';
-}
-
-
-function checkCredentialsMatch(inputArray){
-  // let response;
-    inputArray.forEach(function(input) {
-      console.log(input.value);
-      console.log(sessionStorage.getItem('email'));
-      console.log(sessionStorage.getItem('password'));
-      //   if(input.value !== sessionStorage.getItem('email') || input.value !== sessionStorage.getItem('password')) {
-    //   showErrorLogin(input, `${getFieldName(input)} does not match`);
-    // } else {
-    //   showNoError(input);
-    //   // response = true;
-    // }
-  }); 
-  // return response; 
+  const formControl = input.parentElement;
+  formControl.className = 'login-form-control success';
 }
 
 // Check if passwords match
 function checkEmailsMatch(input) {
   let response;
-  if(input.value.trim() === '') {
+  if (input.value.trim() === '') {
     showErrorLogin(input, `${getFieldName(input)} is required`);
   } else if (input.value !== sessionStorage.getItem('email')) {
     showErrorLogin(input, 'Please enter correct email.');
@@ -49,7 +32,7 @@ function checkEmailsMatch(input) {
 // Check if passwords match
 function checkPasswordsMatch(input) {
   let response;
-  if(input.value.trim() === '') {
+  if (input.value.trim() === '') {
     showErrorLogin(input, `${getFieldName(input)} is required`);
   } else if (input.value !== sessionStorage.getItem('password')) {
     showErrorLogin(input, 'please enter correct password');
@@ -60,21 +43,6 @@ function checkPasswordsMatch(input) {
   return response;
 }
 
-function checkCredentialsRequired(inputArray) {
-  // let response;
-  inputArray.forEach(function(input) {
-    console.log(input.value === '');
-    // if(input.value.trim() === '') {
-    //   showErrorLogin(input, `${getFieldName(input)} is required`);
-    // } else {
-    //   showNoError(input);
-    //   // response = true;
-    // }
-  });
-  // return response;
-}
-
-
 // Returns capitalized input id name
 function getFieldName(input) {
   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
@@ -82,23 +50,16 @@ function getFieldName(input) {
 
 // Redirect to Home
 function redirectHome() {
-      window.location.assign("index.html");
+  window.location.assign('index.html');
 }
 
-
-
-loginBtn.addEventListener('click', (e)=> {
+loginBtn.addEventListener('click', (e) => {
   e.preventDefault();
 
-  const inputArray = [loginEmail, loginPass];
-  // checkCredentialsRequired(inputArray);
-  checkEmailsMatch(inputArray[0]);
-  checkPasswordsMatch(inputArray[1]);
-  
+  checkEmailsMatch(loginEmail);
+  checkPasswordsMatch(loginPass);
 
-  if(checkEmailsMatch(inputArray[0]) &&
-    checkPasswordsMatch(inputArray[1])) {
-      redirectHome();
-    };
+  if (checkEmailsMatch(loginEmail) && checkPasswordsMatch(loginPass)) {
+    redirectHome();
   }
-);
+});
