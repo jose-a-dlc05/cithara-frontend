@@ -4,7 +4,8 @@ let dots = document.getElementById('dots');
 let moreText = document.getElementById('more');
 let btnText = document.getElementById('hero__right--btn').textContent;
 let loginStatus = document.getElementById('login-status');
-console.log(loginStatus.innerHTML);
+let sessionStatus = sessionStorage.getItem('loginstatus');
+console.log(loginStatus);
 
 // Functions
 // Learn More Button - Home Page
@@ -24,7 +25,24 @@ function learnMoreBtnClick(e) {
   }
 }
 
-function loginStatusChange() {}
+function loginState() {
+  if (sessionStatus === 'yes') {
+    loginStatus.innerHTML = 'Log out';
+  } else {
+    loginStatus.innerHTML = 'Log in';
+  }
+}
+
+function changeSessionStatus() {
+  if (sessionStatus === 'yes') {
+    sessionStorage.setItem('loginstatus', 'no');
+  } else {
+    window.location.assign('login.html');
+  }
+}
+
+loginState();
 
 // Event Listeners
 btn.addEventListener('click', learnMoreBtnClick);
+loginStatus.addEventListener('click', changeSessionStatus);

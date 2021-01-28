@@ -60,6 +60,7 @@ loginBtn.addEventListener('click', (e) => {
   checkPasswordsMatch(loginPass);
 
   if (checkEmailsMatch(loginEmail) && checkPasswordsMatch(loginPass)) {
+    sessionStorage.setItem('loginstatus', 'yes');
     redirectHome();
   }
 });
